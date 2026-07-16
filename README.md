@@ -64,6 +64,4 @@ Müşterilerin verdiği sipariş kayıtları.
 
 ---
 
-## 👨‍💻 Hazırlayan
 
-Ad Soyad
