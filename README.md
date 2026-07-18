@@ -36,7 +36,7 @@ Müşterilerin verdiği sipariş kayıtları.
 
 ---
 
-## 🛠️ Kullanılan SQL Konuları
+## Kullanılan SQL Konuları
 
 - SELECT
 - WHERE
