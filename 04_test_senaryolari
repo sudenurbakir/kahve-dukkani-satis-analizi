@@ -1,0 +1,20 @@
+# Kahve Dükkanı Satış Analizi - Test Senaryoları (Test Cases)
+
+Bu doküman, veri tabanının iş kurallarına (Business Rules) uygunluğunu ve veri bütünlüğünü doğrulamak amacıyla hazırlanan İş Analisti test senaryolarını içermektedir.
+
+---
+
+## Test Senaryoları Tablosu
+
+| Test ID | Senaryo Adı | Test Adımları | Beklenen Sonuç | Durum |
+| :--- | :--- | :--- | :--- | :--- |
+| **TC-001** | Yeni Müşteri Ekleme Doğrulaması | 1. `Musteriler` tablosuna yeni bir anonim müşteri ekle.<br>2. Tabloyu listeleyerek kaydın geldiğini kontrol et. | Müşteri başarıyla eklenmeli ve benzersiz bir `musteri_id` almalıdır. | Passed |
+| **TC-002** | Zorunlu Alan (NOT NULL) Kontrolü | 1. `Urunler` tablosuna `fiyat` bilgisi girmeden yeni bir ürün eklemeyi dene. | Sistem hata vermeli ve fiyatsız ürün eklenmesini engellemelidir. | Passed |
+| **TC-003** | İlişkisel Veri Bütünlüğü (Foreign Key) | 1. `Siparisler` tablosuna, veri tabanında kayıtlı olmayan bir `musteri_id` (Örn: 999) ile sipariş eklemeyi dene. | Sistem `Foreign Key` hatası vermeli ve hayali bir müşteriye sipariş açılmasını engellemelidir. | Passed |
+| **TC-004** | Varsayılan Sipariş Adedi Kontrolü | 1. `Siparisler` tablosuna `adet` belirtmeden yeni bir sipariş ekle. | Sistem varsayılan (default) olarak sipariş adedini `1` olarak kaydetmelidir. | Passed |
+| **TC-005** | Ürün Fiyat Sıralama Doğrulaması | 1. Ürünleri pahalıdan ucuza sıralayan analiz sorgusunu çalıştır. | En üstte `Cheesecake` (220 TL), en altta `Cookie` (85 TL) listelenmelidir. | Passed |
+
+---
+
+## 🔍 Test Süreci Hakkında Analist Notu
+Bu test senaryoları, İş Analistliği öğrenme sürecimde bir sistemin iş kurallarını (Business Rules) arka planda nasıl koruduğunu anlamak amacıyla hazırlanmıştır. Bir veri tabanının sadece veri saklamadığını; hatalı siparişleri engellemek, veri kayıplarının önüne geçmek ve mantıksal hataları yakalamak için nasıl test edilmesi gerektiğini bu senaryoları tasarlayarak pratik ettim. Proje, teknik altyapımı güçlendirmek ve analitik bakış açımı geliştirmek için uçtan uca bir pratik süreci olarak tamamlanmıştır.
