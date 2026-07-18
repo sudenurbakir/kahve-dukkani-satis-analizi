@@ -1,11 +1,11 @@
-# ☕ Kahve Dükkanı Satış Analizi
+# Kahve Dükkanı Satış Analizi
 
-## 📋 Proje Hakkında
+## Proje Hakkında
 Bu projede, hayali bir kahve dükkanının satış verileri SQL kullanılarak analiz edilmiştir. Projenin temel amacı; ilişkisel veri tabanı modellemesi yapmak, KVKK ve veri gizliliği standartlarına uygun anonim veriler üretmek ve gerçek bir işletme senaryosu üzerinden stratejik satış analizleri gerçekleştirmektir.
 
 ---
 
-## 🎯 İş Problemi & Analiz İhtiyaçları
+## İş Problemi & Analiz İhtiyaçları
 Kahve dükkanı yönetimi, işletme kararlarını veri odaklı alabilmek adına aşağıdaki kritik iş sorularının cevaplandırılmasını talep etmektedir:
 * **Ürün Performansı:** En çok satılan (adet bazında) ve en fazla ciro/gelir getiren ürünler hangileridir?
 * **Müşteri Davranışı:** Sipariş sıklığı en yüksek olan müşteri segmentleri hangileridir?
