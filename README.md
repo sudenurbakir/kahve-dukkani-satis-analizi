@@ -58,6 +58,7 @@ Proje, SQL süreçlerinin standardına uygun olarak mantıksal bir sıra halinde
 1. **`01_tablolari_olustur.sql`**: Veri tabanı şemasının ve `PRIMARY / FOREIGN KEY` ilişkilerinin kurulması.
 2. **`02_verileri_ekle.sql`**: Analiz için gerekli olan anonim test verilerinin tablolara yüklenmesi.
 3. **`03_analiz_sorgulari.sql`**: İş problemlerini çözen ve yönetim raporlamalarını oluşturan `SELECT` sorguları.
+4. **`04_test_senaryolari.md`**: Veri bütünlüğünü ve iş kurallarını doğrulamak amacıyla hazırlanan İş Analisti test senaryoları (Test Cases).
 
 ---
 *Bu proje, İş Analistliği yolculuğumda SQL yetkinliklerimi geliştirmek ve veri tabanı mantığını pratik yaparak öğrenmek amacıyla hazırladığım bir portfolyo çalışmasıdır.*
