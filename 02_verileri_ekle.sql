@@ -4,14 +4,10 @@ Proje: Kahve Dükkanı Satış Analizi
 Dosya: 02_verileri_ekle.sql
 
 Açıklama:
-Bu dosyada proje için oluşturulan
-Musteriler, Urunler ve Siparisler
-tablolarına örnek veriler eklenmektedir.
+Bu dosyada proje için oluşturulan Musteriler, Urunler ve Siparisler tablolarına örnek veriler eklenmektedir.
 
 Not:
-Bu projede kullanılan tüm veriler
-tamamen hayalidir ve eğitim amaçlı
-oluşturulmuştur.
+Bu projede kullanılan tüm veriler tamamen hayalidir ve eğitim amaçlı oluşturulmuştur.
 =============================================
 */
 
@@ -19,40 +15,40 @@ oluşturulmuştur.
 -- MÜŞTERİLER
 -- ==========================================
 
-INSERT INTO Musteriler (musteri_kodu, sehir) VALUES
-('CUST001','İstanbul'),
-('CUST002','Ankara'),
-('CUST003','İzmir'),
-('CUST004','İstanbul'),
-('CUST005','Bursa'),
-('CUST006','Antalya'),
-('CUST007','Eskişehir'),
-('CUST008','İstanbul'),
-('CUST009','Ankara'),
-('CUST010','İzmir'),
-('CUST011','Bursa'),
-('CUST012','İstanbul'),
-('CUST013','Antalya'),
-('CUST014','Eskişehir'),
-('CUST015','İstanbul');
+INSERT INTO Musteriler (musteri_id, ad_soyad, sehir) VALUES
+(1, 'Musteri_1', 'İstanbul'),
+(2, 'Musteri_2', 'Ankara'),
+(3, 'Musteri_3', 'İzmir'),
+(4, 'Musteri_4', 'İstanbul'),
+(5, 'Musteri_5', 'Bursa'),
+(6, 'Musteri_6', 'Antalya'),
+(7, 'Musteri_7', 'Eskişehir'),
+(8, 'Musteri_8', 'İstanbul'),
+(9, 'Musteri_9', 'Ankara'),
+(10, 'Musteri_10', 'İzmir'),
+(11, 'Musteri_11', 'Bursa'),
+(12, 'Musteri_12', 'İstanbul'),
+(13, 'Musteri_13', 'Antalya'),
+(14, 'Musteri_14', 'Eskişehir'),
+(15, 'Musteri_15', 'İstanbul');
 
 -- ==========================================
 -- ÜRÜNLER
 -- ==========================================
 
-INSERT INTO Urunler (urun_adi, kategori, fiyat) VALUES
-('Latte','Kahve',160.00),
-('Americano','Kahve',140.00),
-('Mocha','Kahve',180.00),
-('Espresso','Kahve',120.00),
-('Filtre Kahve','Kahve',150.00),
-('Cheesecake','Tatlı',220.00),
-('Brownie','Tatlı',170.00),
-('Cookie','Tatlı',85.00),
-('Kruvasan','Unlu Mamul',95.00),
-('Sandviç','Atıştırmalık',190.00),
-('Limonata','İçecek',110.00),
-('Soğuk Çay','İçecek',100.00);
+INSERT INTO Urunler (urun_id, urun_adi, kategori, fiyat) VALUES
+(1, 'Latte', 'Kahve', 160.00),
+(2, 'Americano', 'Kahve', 140.00),
+(3, 'Mocha', 'Kahve', 180.00),
+(4, 'Espresso', 'Kahve', 120.00),
+(5, 'Filtre Kahve', 'Kahve', 150.00),
+(6, 'Cheesecake', 'Tatlı', 220.00),
+(7, 'Brownie', 'Tatlı', 170.00),
+(8, 'Cookie', 'Tatlı', 85.00),
+(9, 'Kruvasan', 'Unlu Mamul', 95.00),
+(10, 'Sandviç', 'Atıştırmalık', 190.00),
+(11, 'Limonata', 'İçecek', 110.00),
+(12, 'Soğuk Çay', 'İçecek', 100.00);
 
 -- ==========================================
 -- SİPARİŞLER
