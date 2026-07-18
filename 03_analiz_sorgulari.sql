@@ -4,9 +4,7 @@ Proje: Kahve Dükkanı Satış Analizi
 Dosya: 03_analiz_sorgulari.sql
 
 Açıklama:
-Bu dosyada kahve dükkanına ait satış
-verileri SQL sorguları kullanılarak
-analiz edilmektedir.
+Bu dosyada kahve dükkanına ait satış verileri SQL sorguları kullanılarak analiz edilmektedir.
 
 =============================================
 */
@@ -41,7 +39,7 @@ FROM Siparisler;
 -- ==========================================
 
 SELECT
-    musteri_kodu,
+    ad_soyad,
     sehir
 FROM Musteriler;
 
@@ -124,7 +122,7 @@ GROUP BY kategori;
 -- ==========================================
 
 SELECT
-    m.musteri_kodu,
+    m.ad_soyad,
     u.urun_adi,
     s.adet,
     s.siparis_tarihi
@@ -207,7 +205,7 @@ ORDER BY siparis_tarihi;
 
 SELECT
     s.siparis_id,
-    m.musteri_kodu,
+    m.ad_soyad,
     u.urun_adi,
     s.adet,
     u.fiyat,
@@ -224,7 +222,7 @@ ON s.urun_id = u.urun_id;
 -- ==========================================
 
 SELECT
-    m.musteri_kodu,
+    m.ad_soyad,
     SUM(s.adet * u.fiyat) AS toplam_harcama
 FROM Siparisler s
 JOIN Musteriler m
